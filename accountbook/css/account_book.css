@@ -1,0 +1,29 @@
+body,span,p,td,div,li,ul{margin:0;padding:0;font-size:12px;color:#666;font-family:Arial,ºÚÌå;line-height:180%;text-align:left;word-wrap:break-word;}
+
+.item_list_part{width:60%;padding-right:100px;padding-bottom:30px;padding-top: 5px;float:right;}
+.daily_cell_title{margin:8px 2px 0px;border-bottom:1px solid #999999;}
+.monthly_cell_title{margin:8px 2px 0px;border-bottom:1px solid #999999;height:25px;background-color:gainsboro;}
+.account_date{color:#6895A6;font-size:14px;font-weight:bold}
+.account_month{color:blue;font-size:16px;font-weight:bold}
+.item_name{color:#000000;font-size:14px;width:150px;float:left;line-height:28px;height:28px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.list_row{overflow:hidden;margin:5px 15px 0px;background:url('/accountbook/images/dash.gif') repeat-x bottom;height:29px;line-height:28px;}
+.balance{overflow:hidden;float:left;width:55px;height:15px;text-align:right;}
+.comment{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;float:left;width:330px;height:20px;}
+.location{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;float:left;width:60px;height:20px;margin-right:5px}
+.update_item{float:left;width:35px;text-align:right;}
+.delete_item{float:left;width:20px;text-align:right;}
+.left_part{float: left;padding-left: 50px;width:20%}
+.edit_title{border-bottom: 1px solid #AAA;}
+.edit_title_txt{font-size: 20px;color: #4C5051;font-weight: bold;font-family: Î¢ÈíÑÅºÚ;}
+.edit_form{padding-top:10px}
+.edit_label{font-size: 15px;color: black;font-family: Î¢ÈíÑÅºÚ;padding-right:5px}
+.edit_input{margin: 5px 0px;}
+.outgo_cat_list{background:#d8d8d8;width:440px;height:150px;display:none;position:absolute;}
+.income_cat_list{background:#d8d8d8;width:440px;height:80px;display:none;}
+.edit_cat_list_close{margin-left:410px;font-family:Arial;font-size:15px}
+.edit_cat_list_line{margin-left:30px;}
+.edit_cat_list_ele{width:80px;float:left}
+.page_turn{text-align: center;margin-top: 10px;}
+.statistic_cat_name{margin-left:5px}
+.statistic_cat_value_out{margin-right:5px}
+.statistic_cat_value_in{margin-right:5px;color:red}
