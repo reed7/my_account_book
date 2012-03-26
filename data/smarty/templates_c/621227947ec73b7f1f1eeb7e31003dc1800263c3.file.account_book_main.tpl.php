@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2012-03-11 10:59:42
+<?php /* Smarty version Smarty-3.1.8, created on 2012-03-19 11:47:02
          compiled from "D:/Works/PHP works/my_account_book/data/smarty/templates\account_book_main.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:318794f5c859e70da58-73669221%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '621227947ec73b7f1f1eeb7e31003dc1800263c3' => 
     array (
       0 => 'D:/Works/PHP works/my_account_book/data/smarty/templates\\account_book_main.tpl',
-      1 => 1331433781,
+      1 => 1331980359,
       2 => 'file',
     ),
   ),
@@ -15,15 +15,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.8',
   'unifunc' => 'content_4f5c859e7a2278_33270912',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_4f5c859e7a2278_33270912')) {function content_4f5c859e7a2278_33270912($_smarty_tpl) {?>﻿<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<?php if ($_valid && !is_callable('content_4f5c859e7a2278_33270912')) {function content_4f5c859e7a2278_33270912($_smarty_tpl) {?>﻿
+<?php echo $_smarty_tpl->getSubTemplate ('header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+
 <title>账本</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
-<link rel="stylesheet" href="/accountbook/css/account_book.css" type="text/css"></link>
 <script type="text/javascript" src="/accountbook/js/calendarDateInput.js">
 /***********************************************
 * Jason's Date Input Calendar- By Jason Moon http://calendar.moonscript.com/dateinput.cfm
@@ -122,5 +121,5 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </div>
 
 </div><!-- outer end -->
-</body>
-</html><?php }} ?>
+<?php echo $_smarty_tpl->getSubTemplate ('footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+<?php }} ?>

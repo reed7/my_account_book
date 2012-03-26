@@ -1,6 +1,7 @@
 <?php
 require_once("da_access.php");
 require_once("setups/smarty_setup.php");
+require_once("checkLogin.php");
 
 $year = $_GET['statisticYear'];
 $month = $_GET['statisticMonth'];

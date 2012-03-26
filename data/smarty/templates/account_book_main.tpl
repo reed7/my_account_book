@@ -1,7 +1,6 @@
 ﻿{*let's make some change and commit*}
 {include 'header.tpl'}
 <title>账本</title>
-<link rel="stylesheet" href="/accountbook/css/account_book.css" type="text/css"></link>
 <script type="text/javascript" src="/accountbook/js/calendarDateInput.js">
 /***********************************************
 * Jason's Date Input Calendar- By Jason Moon http://calendar.moonscript.com/dateinput.cfm

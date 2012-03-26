@@ -1,6 +1,7 @@
 <?php
-include('da_access.php');
-include_once("account_item_class.php");
+require_once('da_access.php');
+require_once("account_item_class.php");
+require_once("checkLogin.php");
 
 $accountItem = new AccountItem();
 

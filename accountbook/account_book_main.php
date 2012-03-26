@@ -2,7 +2,7 @@
 require_once("da_access.php");
 require_once("setups/smarty_setup.php"); 
 require_once("account_item_class.php");
-//include("checkLogin.php");
+require_once("checkLogin.php");
 
 $smarty = new Smarty_AccountBook();
 

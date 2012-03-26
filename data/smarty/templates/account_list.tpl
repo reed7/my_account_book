@@ -109,7 +109,15 @@ function goNextPage(){
 	go2Page(pageNum, itemCount);
 }
 
-function go2Page(pageNum, itemCount){		
+/**
+ * pageNum start with 0, end with total-1
+ */
+function go2Page(pageNum, itemCount){
+	var pageCount = {$pageCount};
+	if(pageNum > pageCount-1 || pageNum < 0){
+		alert("这不是一个正确的页码！");
+		return false;
+	}
 	document.getElementById("pageNum").value = pageNum;				
 	document.getElementById("page").submit();
 }

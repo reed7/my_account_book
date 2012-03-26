@@ -1,6 +1,5 @@
 {include 'header.tpl'}
 <title>账本-账目统计</title>
-<link rel="stylesheet" href="/accountbook/css/account_book.css" type="text/css"></link>
 </head>
 <body>
 <div class="left_part">

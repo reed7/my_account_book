@@ -1,5 +1,6 @@
 <?php
-include('save_account_service.php');
+require_once('save_account_service.php');
+require_once("checkLogin.php");
 
 echo "<script type='text/javascript'>" . PHP_EOL; 
 if($result == 0){

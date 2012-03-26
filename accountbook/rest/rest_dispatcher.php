@@ -31,8 +31,7 @@ if($isValidReq == true){
 	if(!is_null($result)){	
 		echo "{\"error\":\"0\",\"msg\":".json_encode($result)."}";
 	}
-} else {
-	$logger->warn("Got an illegal access to rest api.");
+} else {	
 	echo "{\"error\":\"1\",\"msg\":\"This request has failed to pass the validation!\"}";
 }
 ?>

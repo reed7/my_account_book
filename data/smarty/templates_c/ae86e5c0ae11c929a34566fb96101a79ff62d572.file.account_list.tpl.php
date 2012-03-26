@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2012-03-11 10:59:42
+<?php /* Smarty version Smarty-3.1.8, created on 2012-03-26 13:36:31
          compiled from "D:/Works/PHP works/my_account_book/data/smarty/templates\account_list.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:245414f5c859e882929-99048721%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ae86e5c0ae11c929a34566fb96101a79ff62d572' => 
     array (
       0 => 'D:/Works/PHP works/my_account_book/data/smarty/templates\\account_list.tpl',
-      1 => 1330871807,
+      1 => 1332768769,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.8',
+  'unifunc' => 'content_4f5c859ea6ba62_50352950',
   'variables' => 
   array (
     'itemsArray' => 0,
@@ -35,8 +37,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'type' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_4f5c859ea6ba62_50352950',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_4f5c859ea6ba62_50352950')) {function content_4f5c859ea6ba62_50352950($_smarty_tpl) {?><!-- List Start -->
 <?php $_smarty_tpl->tpl_vars['currentMonth'] = new Smarty_variable('', null, 0);?>
@@ -183,7 +183,16 @@ function goNextPage(){
 	go2Page(pageNum, itemCount);
 }
 
-function go2Page(pageNum, itemCount){		
+/**
+ * pageNum start with 0, end with total-1
+ */
+function go2Page(pageNum, itemCount){
+	var pageCount = <?php echo $_smarty_tpl->tpl_vars['pageCount']->value;?>
+;
+	if(pageNum > pageCount-1 || pageNum < 0){
+		alert("这不是一个正确的页码！");
+		return false;
+	}
 	document.getElementById("pageNum").value = pageNum;				
 	document.getElementById("page").submit();
 }
