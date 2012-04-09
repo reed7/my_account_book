@@ -8,5 +8,6 @@ class AccountItem
 	public $location;
 	public $comment;
 	public $type;	
+	public $isHidden;
 }
 ?>

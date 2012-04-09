@@ -54,7 +54,7 @@
 		<span class='balance' style='color:{$fontColor}'>{$item["balance"]}</span>
 		<span class='update_item'><a href='account_item_update.php?id={$item["id"]}' target='_blank'>改</a></span>
 		<span class='delete_item'><a href='del_account.php?id={$item["id"]}' onclick='javascript:return confirmDel();'>删</a></span>
-	</div>
+	</div>	
 {/foreach}
 <!-- List End -->
 
